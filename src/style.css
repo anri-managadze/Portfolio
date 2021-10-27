@@ -1,0 +1,168 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif !important;
+  /* header start */
+  /* header end */
+  /* welcome start */
+  /* my color */
+  /* dark mode start */
+  /* dark mode end */
+  /* header end */
+}
+body header {
+  padding: 50px;
+  /* menu */
+}
+body header .symbol {
+  width: 50px;
+  height: 50px;
+  background-color: #007CED;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+}
+body header .name-size {
+  font-size: 20px;
+  font-weight: 900;
+}
+body header li {
+  cursor: pointer;
+}
+body header .change {
+  cursor: pointer;
+}
+body header .menu-btn {
+  border: none !important;
+  background-color: white;
+  color: black;
+}
+body header .menu-btn:hover {
+  background-color: white;
+  color: black;
+}
+body header .menu-btn:focus {
+  background-color: white;
+  box-shadow: none;
+  color: black;
+}
+body header .offcanvas-end {
+  width: 250px;
+}
+body .welcome {
+  display: flex;
+  align-content: center;
+  --bs-gutter-x: 0rem;
+  /* image side start */
+  /* text side. download and contact buttons */
+}
+body .welcome .image {
+  width: 45%;
+  border-radius: 50%;
+  border: 15px solid white;
+  box-shadow: 1px 1px 15px 15px #F3F3F3;
+  margin-left: 150px;
+}
+body .welcome .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+body .welcome .download-btn, body .welcome .contact-btn {
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: white;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+body .welcome .download-btn {
+  border: 2px solid #007CED;
+}
+body .welcome .download-btn:hover {
+  background-color: #007CED;
+}
+body .welcome .contact-btn {
+  border: 2px solid #B3B3B3;
+}
+body .welcome .contact-btn:hover {
+  background-color: #B3B3B3;
+}
+body .color-gray {
+  color: #B3B3B3 !important;
+}
+body .kkk {
+  background-color: #222222;
+  color: #F3F3F3;
+  box-shadow: 2px 2px 2px 2px #171717;
+  /* dark.menu */
+  /* dark.image side */
+  /* dark. download and contact buttons */
+}
+body .kkk .menu-btn {
+  background-color: #222222;
+  color: #B3B3B3;
+}
+body .kkk .menu-btn:hover {
+  background-color: #222222;
+  color: white;
+}
+body .kkk .offcanvas {
+  background-color: #222222;
+  color: #B3B3B3;
+}
+body .kkk .image {
+  border: 15px solid #444444;
+  box-shadow: 1px 1px 15px 15px #191919;
+}
+body .kkk .download-btn, body .kkk .contact-btn {
+  background-color: #444444;
+  color: white;
+}
+@media only screen and (max-width: 992px) {
+  body .kkk header {
+    box-shadow: 2px 2px 2px 2px #191919;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    padding: 10px 20px !important;
+    box-shadow: 2px 2px 2px 2px #F3F3F3;
+  }
+  header .symbol {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 18px !important;
+  }
+
+  .welcome {
+    margin-top: 100px !important;
+  }
+  .welcome .image {
+    width: 60% !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .welcome .image {
+    margin: 0 !important;
+    width: 80% !important;
+  }
+  .welcome .text {
+    text-align: center !important;
+    margin-top: 50px !important;
+  }
+  .welcome .btns {
+    justify-content: center;
+  }
+}
+/*# sourceMappingURL=style.scss.map */
+
+/*# sourceMappingURL=style.css.map */

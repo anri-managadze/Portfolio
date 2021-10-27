@@ -1,0 +1,183 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif !important;
+
+  /* header start */
+  header {
+    padding: 50px;
+    .symbol {
+      width: 50px;
+      height: 50px;
+      background-color: #007CED;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+      font-weight: 900;
+      color: white;
+    }
+    .name-size {
+      font-size: 20px;
+      font-weight: 900;
+    }
+    li {
+      cursor: pointer;
+    }
+    .change {
+      cursor: pointer;
+    }
+    /* menu */
+    .menu-btn {
+      border: none !important;
+      background-color: white;
+      color: black;
+    }
+    .menu-btn:hover {
+      background-color: white;
+      color: black;
+    }
+    .menu-btn:focus {
+      background-color: white;
+      box-shadow: none;
+      color: black;
+    }
+    .offcanvas-end {
+      width: 250px;
+    }
+  }
+  /* header end */
+
+  /* welcome start */
+  .welcome {
+    display: flex;
+    align-content: center;
+    --bs-gutter-x: 0rem;
+    /* image side start */
+    .image {
+      width: 45%;
+      border-radius: 50%;
+      border: 15px solid white;
+      box-shadow: 1px 1px 15px 15px #F3F3F3;
+      margin-left: 150px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    /* text side. download and contact buttons */
+    .download-btn, .contact-btn {
+      padding: 8px 20px;
+      border-radius: 25px;
+      background-color: white;
+      font-weight: bold;
+      transition-duration: 0.5s;
+    }
+    .download-btn {
+      border: 2px solid #007CED;
+    }
+    .download-btn:hover {
+      background-color: #007CED;
+
+    }
+    .contact-btn {
+      border: 2px solid #B3B3B3;
+    }
+
+    .contact-btn:hover {
+      background-color: #B3B3B3;
+    }
+  }
+
+  /* my color */
+  .color-gray {
+    color: #B3B3B3 !important;
+  }
+
+  /* dark mode start */
+  .ggg { }
+
+  .kkk {
+    background-color: #222222;
+    color: #F3F3F3;
+    box-shadow: 2px 2px 2px 2px #171717;
+
+    /* dark.menu */
+    .menu-btn {
+      background-color: #222222;
+      color: #B3B3B3;
+    }
+    .menu-btn:hover {
+      background-color: #222222;
+      color: white;
+    }
+    .offcanvas {
+      background-color: #222222;
+      color: #B3B3B3;
+    }
+
+    /* dark.image side */
+    .image {
+      border: 15px solid #444444;
+      box-shadow: 1px 1px 15px 15px #191919;
+    }
+
+    /* dark. download and contact buttons */
+    .download-btn, .contact-btn {
+      background-color: #444444;
+      color: white;
+    }
+
+    @media only screen and (max-width: 992px) {
+      header {
+        box-shadow: 2px 2px 2px 2px #191919;
+
+      }
+    }
+  }
+  /* dark mode end */
+  /* header end */
+
+}
+@media only screen and (max-width: 992px) {
+  header {
+    padding: 10px 20px !important;
+    box-shadow: 2px 2px 2px 2px #F3F3F3;
+
+  .symbol {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 18px !important;
+    }
+  }
+  .welcome{
+    margin-top: 100px!important;
+    .image {
+      width: 60% !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .image {
+      margin: 0 !important;
+      width: 80% !important;
+    }
+    .text{
+      text-align: center!important;
+      margin-top: 50px!important;
+    }
+    .btns {
+      justify-content: center;
+    }
+  }
+}
+
+/*# sourceMappingURL=style.scss.map */
