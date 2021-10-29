@@ -5,16 +5,20 @@ body {
   /* header start */
   /* header end */
   /* welcome start */
-  /* my color */
+  /* my  */
   /* dark mode start */
   /* dark mode end */
   /* header end */
 }
 body header {
   padding: 50px;
+  width: 100%;
   /* menu */
 }
-body header .symbol {
+body header .reload {
+  cursor: pointer;
+}
+body header .reload .symbol {
   width: 50px;
   height: 50px;
   background-color: #007CED;
@@ -25,7 +29,7 @@ body header .symbol {
   font-weight: 900;
   color: white;
 }
-body header .name-size {
+body header .reload .name-size {
   font-size: 20px;
   font-weight: 900;
 }
@@ -82,7 +86,8 @@ body .welcome .download-btn {
   border: 2px solid #007CED;
 }
 body .welcome .download-btn:hover {
-  background-color: #007CED;
+  background-color: #1880e0;
+  color: #F3F3F3;
 }
 body .welcome .contact-btn {
   border: 2px solid #B3B3B3;
@@ -90,10 +95,31 @@ body .welcome .contact-btn {
 body .welcome .contact-btn:hover {
   background-color: #B3B3B3;
 }
+body .project img, body .experience img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+body footer {
+  border-top: 2px solid #eceaea;
+  padding: 15px 50px;
+  font-size: 14px;
+  color: #949393;
+}
 body .color-gray {
   color: #B3B3B3 !important;
 }
-body .kkk {
+body .color-contact, body .experience-color {
+  color: #838282 !important;
+}
+body .icon-font-size {
+  font-size: 22px;
+  color: #0684f6;
+}
+body .experience-ul {
+  font-size: 15px;
+}
+body .dark-mode {
   background-color: #222222;
   color: #F3F3F3;
   box-shadow: 2px 2px 2px 2px #171717;
@@ -101,30 +127,34 @@ body .kkk {
   /* dark.image side */
   /* dark. download and contact buttons */
 }
-body .kkk .menu-btn {
+body .dark-mode .menu-btn {
   background-color: #222222;
   color: #B3B3B3;
 }
-body .kkk .menu-btn:hover {
+body .dark-mode .menu-btn:hover {
   background-color: #222222;
   color: white;
 }
-body .kkk .offcanvas {
+body .dark-mode .offcanvas {
   background-color: #222222;
   color: #B3B3B3;
 }
-body .kkk .image {
+body .dark-mode .image {
   border: 15px solid #444444;
   box-shadow: 1px 1px 15px 15px #191919;
 }
-body .kkk .download-btn, body .kkk .contact-btn {
+body .dark-mode .download-btn, body .dark-mode .contact-btn {
   background-color: #444444;
   color: white;
 }
 @media only screen and (max-width: 992px) {
-  body .kkk header {
+  body .dark-mode header {
     box-shadow: 2px 2px 2px 2px #191919;
   }
+}
+body .dark-mode footer {
+  background-color: #222222 !important;
+  border-top: 2px solid #191919;
 }
 
 @media only screen and (max-width: 992px) {

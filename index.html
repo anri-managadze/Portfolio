@@ -12,30 +12,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="container-fluid p-0 ggg ">
+    <div class="container-fluid  light-mode ">
         <header>
             <div class="row d-flex align-items-center">
 
                 <!-- Logo start-->
-                <div class=" col-6 col-lg-3">
+                <div class=" col-8 col-lg-3 reload">
                     <div class="logo d-flex align-items-center flex-wrap ">
                         <div class="symbol ">A</div>
-                        <div class="ms-3 name-size">Anri Managadze</div>
+                        <div class="ms-3 name-size ">Anri Managadze</div>
                     </div>
                 </div>
 
                 <!-- Dark Icon start-->
-                <div class="col-4 change d-flex justify-content-end color-gray"><i class="fas fa-adjust"><span class="ms-2">Dark Mode</span></i></div>
+                <div class="col-2 col-lg-4 change d-flex justify-content-end align-content-center color-gray"><i class="fas fa-adjust"></i><span class="ms-2 d-none d-lg-block">Dark Mode</span></div>
 
                 <!-- List start-->
                 <div class="col-2 col-lg-5 ">
-                    <ul class="d-none d-lg-flex justify-content-end  m-0 list-unstyled color-gray ">
-                        <li class="ms-4 ">About Me</li>
-                        <li class="ms-4 ">Resume</li>
-                        <li class="ms-4 ">Portfolio</li>
-                        <li class="ms-4 ">Contact</li>
+                    <ul class="d-none d-lg-flex justify-content-end  m-0 list-unstyled ">
+                        <li class="ms-4 "><a href="#" class="color-gray text-decoration-none">About Me</a></li>
+                        <li class="ms-4 "><a href="#" class="color-gray text-decoration-none" >Resume</a></li>
+                        <li class="ms-4 "><a href="#project" class="color-gray text-decoration-none" >Project</a></li>
+                        <li class="ms-4 "><a href="#contact" class="color-gray text-decoration-none" >Contact</a></li>
                     </ul>
                     <!-- Menu start-->
                     <div class="d-flex d-lg-none justify-content-end">
@@ -77,13 +78,68 @@
                 </div>
             </div>
 
+            <!-- about me-->
+            <div class="row about mt-5  p-4 " id="about">
+about me
+            </div>
             <!-- project-->
-            <div class="project mt-5">
-                project
+            <div class="row project mt-5 p-5" id="project">
+                <div class="col-12 col-md-5 ">
+                    <img src="./public/project2.jpg" alt="project-photo">
+                </div>
+                <div class="col-12 col-md-7">project</div>
+            </div>
+            <!-- experience-->
+            <div class="row experience mt-5 p-5">
+                <h4 class="fw-bold ">Experience</h4>
+                <div class="col-12 col-md-7 pe-5 experience-color ">
+                    <div>
+                        <h6>Web-Page<a href="https://anri-managadze.github.io/lvl2-AnriM-Ecommerce/" class="ms-2" target="_blank">Ecomerce</a></h6>
+                        <ul class="experience-ul">
+                            <li>Create designs using React and Material-UI</li>
+                            <li>Extract information from API, serialize and use in the right place</li>
+                            <li>Add a single page and go from the main page to the same product’s single page via Id</li>
+                            <li>Add Admin pannel, Sing Up and Sign In pages and functionality (Send and receive information on API)</li>
+                            <li>Add user page, get the required information from API and make changes. ( Avatar photo, name, and other information.)</li>
+                            <li>Use Context to share states and use them throughout the program, then rearrange to Redux.</li>
+                            <li>Technologies: React, Redux, Material-Ui, Formik, React Router, Context, Fech API ,JSON, Git, Github</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>Project<a href="https://anri-managadze.github.io/lvl2-AnriM-WeatherApp/" class="ms-2" target="_blank">Weather-App</a></h6>
+                        <ul class="experience-ul">
+                            <li>Create designs using React and Material-UI</li>
+                            <li>Extract information from API, serialize and use in the right place</li>
+                            <li>Technologies: React, Material-Ui, Fech API ,JSON, Git, Github</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 ">
+                    <img src="./public/experience.jpg" alt="experience-photo">
+                </div>
+            </div>
+
+            <!-- contact-->
+            <div class="row contact mt-5 p-5 color-contact mb-5" id="contact">
+                <h5>Contact</h5>
+                <div class="col-12 col-md-6 ">
+                    <div class="d-flex align-items-baseline"><i class="fas fa-mobile-alt icon-font-size"></i><h5 class="ms-4 mt-4">+995 598 87 87 74</h5></div>
+                    <div class="d-flex align-items-baseline"><i class="fas fa-map-marker-alt icon-font-size"></i><h5 class="ms-4 mt-4">Tbilisi, Georgia</h5></div>
+                    <div class="d-flex align-items-baseline"><i class="far fa-envelope icon-font-size"></i><h5 class="ms-4 mt-4">anrimanagadze@gmail.com</h5></div>
+                </div>
+                <div class="col-12  col-md-6">
+                    <a href="https://www.linkedin.com/in/anri-managadze-1652b7221/" class="d-flex align-items-baseline text-decoration-none" target="_blank"><i class="fab fa-linkedin icon-font-size" ></i><h5 class="ms-4 mt-4 color-contact">Linkdin</h5></a>
+                    <a href="https://github.com/anri-managadze" class="d-flex align-items-baseline text-decoration-none" target="_blank"><i class="fab fa-github-square icon-font-size" ></i><h5 class="ms-4 mt-4 color-contact">Github</h5></a>
+                    <a href="https://www.facebook.com/anri.managadze" class="d-flex align-items-baseline text-decoration-none" target="_blank"><i class="fab fa-facebook-square icon-font-size" ></i><h5 class="ms-4 mt-4 color-contact">Facebook</h5></a>
+                </div>
             </div>
 
         </main>
-        <footer></footer>
+        <footer class="d-flex justify-content-between footer ">
+            <div>Created by Anri Managadze</div>
+            <div>© 2021 All rights reserved</div>
+        </footer>
+
     </div>
 </body>
 </html>

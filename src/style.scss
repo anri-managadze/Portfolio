@@ -6,6 +6,9 @@ body {
   /* header start */
   header {
     padding: 50px;
+    width: 100%;
+  .reload {
+    cursor: pointer;
     .symbol {
       width: 50px;
       height: 50px;
@@ -17,10 +20,12 @@ body {
       font-weight: 900;
       color: white;
     }
+
     .name-size {
       font-size: 20px;
       font-weight: 900;
     }
+  }
     li {
       cursor: pointer;
     }
@@ -79,7 +84,8 @@ body {
       border: 2px solid #007CED;
     }
     .download-btn:hover {
-      background-color: #007CED;
+      background-color: #1880e0;
+      color: #F3F3F3;
 
     }
     .contact-btn {
@@ -90,16 +96,39 @@ body {
       background-color: #B3B3B3;
     }
   }
+  .project img, .experience img {
+      width: 100%;
+      height: 100%;
+    border-radius: 5px;
+  }
 
-  /* my color */
+  footer {
+    border-top: 2px solid #eceaea;
+    padding: 15px 50px;
+    font-size: 14px;
+    color: #949393;
+  }
+
+
+  /* my  */
   .color-gray {
     color: #B3B3B3 !important;
   }
+  .color-contact, .experience-color {
+    color: #838282 !important;
+  }
+  .icon-font-size {
+    font-size: 22px;
+    color: #0684f6;
+  }
+  .experience-ul{
+    font-size: 15px ;
+  }
 
   /* dark mode start */
-  .ggg { }
+  .light-mode { }
 
-  .kkk {
+  .dark-mode {
     background-color: #222222;
     color: #F3F3F3;
     box-shadow: 2px 2px 2px 2px #171717;
@@ -136,6 +165,11 @@ body {
 
       }
     }
+
+   footer {
+      background-color: #222222!important;
+      border-top: 2px solid #191919;
+    }
   }
   /* dark mode end */
   /* header end */
@@ -161,6 +195,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+
   .welcome {
     display: flex;
     flex-direction: column;
