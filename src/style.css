@@ -57,22 +57,19 @@ body header .offcanvas-end {
   width: 250px;
 }
 body .welcome {
-  display: flex;
-  align-content: center;
   --bs-gutter-x: 0rem;
   /* image side start */
   /* text side. download and contact buttons */
 }
 body .welcome .image {
-  width: 45%;
+  width: 50%;
   border-radius: 50%;
   border: 15px solid white;
   box-shadow: 1px 1px 15px 15px #F3F3F3;
-  margin-left: 150px;
+  margin: 20px auto;
 }
 body .welcome .image img {
   width: 100%;
-  height: 100%;
   border-radius: 50%;
 }
 body .welcome .download-btn, body .welcome .contact-btn {
@@ -98,13 +95,16 @@ body .welcome .contact-btn a {
 body .welcome .contact-btn:hover {
   background-color: #B3B3B3;
 }
-body .project img, body .experience img {
+body .about {
+  padding: 1.5rem 0;
+}
+body .project img, body .experience img, body .about img {
   width: 100%;
   height: 100%;
   border-radius: 5px;
 }
 body .project, body .experience, body .contact {
-  padding: 3rem;
+  padding: 3.5rem;
 }
 body footer {
   border-top: 2px solid #eceaea;
@@ -174,22 +174,8 @@ body .dark-mode footer {
     font-size: 18px !important;
   }
 
-  .welcome {
-    margin-top: 100px !important;
-  }
   .welcome .image {
-    width: 60% !important;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .welcome {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .welcome .image {
-    margin: 0 !important;
-    width: 80% !important;
+    width: 50% !important;
   }
   .welcome .text {
     text-align: center !important;
@@ -199,7 +185,11 @@ body .dark-mode footer {
     justify-content: center;
   }
 
-  .project, .experience, .contact {
+  .btn-close img {
+    background: #007CED !important;
+  }
+
+  .project, .experience, .contact, .about {
     padding: 1rem !important;
   }
 
